@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Operações Matemáticas</title>
+    <script src="math.js"></script>
+</head>
+<body>
+    <header class="title">
+        <h1>Operações Matemáticas</h1>
+        <h2>Esse site apresentará diversas Operações Matemáticas que foram programadas em JS</h2>
+    </header>
+
+    <section id="fatorial">
+        <h2>FATORIAL</h2>
+        <p>De qual número você quer saber o fatorial? zerar
+            <input type="number" name="fatorial" id="txtfat">
+            <input type="button" value="Calcular" id="calcfat" onclick="fatorial()">
+            <input type="button" value="Zerar" id="zerar" onclick="zerar()">
+        </p>
+
+        <div id="fatres">
+        </div>
+    </section>
+
+    <section id="imc">
+        <h2>IMC</h2>
+        <p>Digite o seu peso (ex: 68.2)
+            <input type="number" name="peso" id="txtpeso" placeholder="10" min="10">
+            <label for="txtpeso">Kg</label>
+        </p>
+        <p>Digite a sua altura (ex: 1.74)
+            <input type="number" name="altura" id="txtalt" placeholder="1.0" step="0.01" min="1.0">
+            <label for="txtalt">m</label>
+        </p>
+        <input type="button" value="Calcular" id="calcimc" onclick="imc()">
+
+        <div id="imcres">
+
+        </div>
+
+        <div id="diag">
+
+        </div>
+    </section>
+
+
+    <section id="primo">
+        <h2>NÚMERO PRIMO</h2>
+        <p>Digite um número e descruba se ele é primo ou não
+            <input type="number" name="primo" id="txtprimo">
+            <input type="button" value="Calcular" id="calcprimo" onclick="primo()">
+        </p>
+
+        <div id="primores">
+
+        </div>
+    </section>
+
+
+    <section id="bhask">
+        <h2>BHASKARA</h2>
+        <p>Digite o valor de a:
+            <input type="number" name="bhaska" id="txta">
+        </p>
+
+        <p>Digite o valor de b:
+            <input type="number" name="bhaska" id="txtb">
+        </p>
+
+        <p>Digite o valor de c:
+            <input type="number" name="bhaska" id="txtc">
+        </p>
+
+        <input type="button" value="Calcular" id="calcbhask" onclick="bhask()">
+
+        <div id="bhaskres"></div>
+        <div id="bhaskcoor"></div>
+        <div id="bhaskconc"></div>
+        <div id="bhaskinfo"></div>
+
+    </section>
+
+
+    <section id="numb">
+        <h2>JOGO DE NÚMEROS</h2>
+        
+        <p>Adicione 10 números</p>
+        <input type="number" name="tenNumber" id="txtTen">
+        <input type="button" value="Adicionar" id="add" onclick="adicionar()">
+        <input type="button" value="Limpar" id="limpar" onclick="limpar()">
+
+        <select name="numbers" id="selnumb" size="10">
+            <input type="button" value="Finalizar" id="finish" onclick="finalizar()">
+        </select>
+
+        <input type="button" value="Pares" id="par" onclick="par()">
+        <input type="button" value="ìmpares" id="impar" onclick="impar()">
+
+        <div id="numbres"></div>
+        <div id="parres"></div>
+        <div id="impres"></div>
+
+    </section>
+
+    <footer>
+        <section class="footer">
+            <div class="rights">
+                <h4>&copy;project by <span class="footerBy">Gabriel Andrade</span></h4>
+            </div>
+        </section>
+    </footer>
+
+</body>
+</html>
